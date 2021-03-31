@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1{
+    font-size: 3rem;
+}
+div{
+    border-style: solid;
+    border-radius: 5px;
+}
+div.shadow{
+    margin: 15px;
+    box-shadow: 4px 5px 5px skyblue;
+    border-style: double;
+    border-width: 0px;
+}
+/* .shadow p{
+
+} */
+#title{
+    background: rgb(0,213,246);
+    background: linear-gradient(180deg, rgb(0, 168, 246) 0%, rgb(0, 168, 246) 50%, rgba(255,255,255,0) 100%);    
+    padding: 30px 0px 30px 10px;
+}
+#title span{
+    color: white;
+    font-weight: 900;
+}
+.break {
+    flex-basis: 100%;
+    height: 0;
+    border-radius: 0;
+    border-style: none;
+}
+.headerBlock{
+    width: 90%;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-size: cover;
+}
+.headerBlock p#hongkong{
+    font-family: “Franklin Gothic Medium”, “Franklin Gothic”, “ITC Franklin Gothic”, Arial, sans-serif;
+    font-size: 2.1rem;
+    font-weight: 700;
+    margin: 20px 0px 0px 20px;
+}
+.headerBlock img:nth-child(3){
+    height: 90px;
+    margin-left: 20px;    
+}
+.headerBlock p:nth-child(4){
+    margin-left: 20px;
+    font-size: 3.5rem;
+}
+.headerBlock p:nth-child(4) span{
+    font-size: 1rem;
+    vertical-align: top;
+
+}
+.headerBlock img:nth-child(6){
+    height: 70px;
+    margin-left: 20px;    
+    
+}
+.headerBlock p:nth-child(7){
+    margin-left: 20px;
+    font-size: 3rem;
+    
+}
+.headerBlock p:nth-child(7) span{
+    font-size: 1rem;
+    
+    vertical-align: bottom;
+}
+.headerBlock img:nth-child(9){
+    height: 60px;
+    margin-left: 20px;    
+    
+}
+.headerBlock p:nth-child(10){
+    margin-left: 20px;
+    font-size: 3rem;
+    
+}
+.headerBlock p:nth-child(10) span{
+    font-size: 1rem;
+    vertical-align: bottom;
+}
+.headerBlock img:nth-child(12){
+    height: 60px;
+    margin-left: 20px;
+}
+.headerBlock p:nth-child(13){
+    margin-left: 20px;
+    font-size: 2.7rem;
+}
+.headerBlock p.lastUpdates{
+    width: 95%;
+    text-align: right;
+    
+}
+.myLocation{
+    width: 90%;
+    height: 50vh;
+    position: relative;
+    background-image: url("https://tenor.com/view/aesthetic-sky-clouds-gif-17298431.gif");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding-top: 10px;
+}
+.myLocation p:nth-child(1){
+    font-family: “Franklin Gothic Medium”, “Franklin Gothic”, “ITC Franklin Gothic”, Arial, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 20px 0px 10px 20px;
+}
+.myLocation p:nth-child(2),p:nth-child(3){
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0px 0px 0px 30px;
+}
+.myLocation p:nth-child(3){
+    margin: 0px 0px 0px 40px;
+}
+.myLocation p:nth-child(4){
+    margin: 20px 0px 0px 40px;
+    font-size: 2.5rem;
+    float: left;
+}
+.myLocation p:nth-child(4) span{
+    margin-left: 5px;
+    font-size: 1rem;
+    vertical-align: top;
+}
+.myLocation img:nth-child(5){
+    margin: 20px 20px 0px 40px;
+    margin-left: 20vw;
+    float: left;
+}
+.myLocation p:nth-child(6){
+    margin: 20px 0px 0px 0px;
+    font-size: 2.5rem;
+    clear: right;
+}
+.myLocation p:nth-child(6) span{
+    font-size: 1rem;
+    vertical-align: bottom;
+    margin-left: 5px;
+}
+.myLocation img:nth-child(7){
+    margin: 30px 20px 0px 30px;
+    float: left;
+}
+.myLocation p:nth-child(8){
+    margin: 15px 0px 0px 0px;
+    font-size: 3.5rem;
+    float: left;
+}
+.myLocation p:nth-child(8) span{
+    margin-top: -10px;
+    display: block;
+    font-size: 1rem;
+    clear: both;
+}
+.temperatures{
+    padding-top: 10px;
+    width: 90%;
+    height: 30vh;
+    position: relative;
+    background-image: url('https://cdn.dribbble.com/users/405535/screenshots/3139399/temp.gif');
+    background-position: center;
+}
+.temperatures p{
+    margin: 20px 0px 10px 20px;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.temperatures label{
+    margin: 20px 0px 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.temperatures select{
+    margin: 10px 0px 10px 20px;
+    font-size: 1rem;
+    clear: both;
+    border-style: double;
+    border-width: 5px;
+    border-color: skyblue;
+}
+.days9WeatherForecast{
+    padding-top: 10px;
+    width: 90%;
+    position: relative;
+    margin: 0;
+    box-shadow: none;
+    color: white;
+    background-image: url('https://i1.wp.com/windowscustomization.com/wp-content/uploads/2019/10/Sun-Earth.gif?fit=768%2C432&quality=80&strip=all&ssl=1');
+    background-size: cover;
+    background-position: center;
+}
+.days9WeatherForecast p{
+    margin: 20px 0px 10px 20px;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.days9WeatherForecastWrap{
+    display: flex;
+    overflow: scroll;
+    flex-direction: row;
+    align-content: flex-start;
+    margin: 0;
+    box-shadow: none;
+    border-style: none;
+    margin: 20px;
+}
+
+.forecastbox *{
+    border-style: none;
+}
+.forecastbox{
+    margin: 0px 20px 20px 0px;
+    border-style: none;
+}
+.forecastbox .ForecastWeek{
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 50%, rgba(255,255,255,0) 100%);
+
+    padding: 3px 7px 3px 7px;
+    margin-left: 10%;
+    display: inline-block;
+}
+.forecastbox .ForecastDate{
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 50%, rgba(255,255,255,0) 100%);
+    padding: 3px 7px 3px 7px;
+    margin-left: 5%;
+    display: inline-block;
+}
+.forecastbox img{
+    height: 110px;
+}
+.forecastbox .ForecastTemperatures{
+    text-align: center;
+}
+.forecastbox .ForecastHumidity{
+    text-align: center;
+}
+#warning{
+    position: absolute;   
+    bottom: 0;
+    left: 0;
+    padding: 5px 5vw 5px 5vw;
+    background-color: red;
+    border-style: none;
+    color: white;
+}
+#warning:hover{
+    cursor: pointer;
+}
+#warning p{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+#warning p:nth-child(2){
+    font-size: 1rem;
+}
+@media(min-width: 780px){
+    div{
+        border-radius: 15px;
+    }
+    h1{
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    .headerBlock{
+        width: 95%;
+    }
+    .break {
+        display: none;
+    }
+    .break:nth-child(2){
+        display: initial;
+    }
+    .myLocation{
+        width: 50vw;
+        height: 40vh;
+        display: inline-block;
+    }
+    .temperatures {
+        width: 40vw;
+        height: 40vh;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .days9WeatherForecast{
+        width: 95%;
+    }
+    .myLocation img:nth-child(5) {
+        margin: 20px 20px 0px 40px;
+        margin-left: 5vw;
+        float: left;
+    }
+    .myLocation p:nth-child(6) {
+        margin: 20px 5vw 0px 0px;
+        font-size: 2.5rem;
+        float: left;
+    }
+    
+}
